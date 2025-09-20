@@ -1,0 +1,1296 @@
+{
+	"info": {
+		"_postman_id": "9aa9d4e4-1982-42d5-824e-baf308d1f64b",
+		"name": "Apartments Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11899025",
+		"_collection_link": "https://solar-station-938870.postman.co/workspace/apis~f96d4969-ae58-4a87-ac94-e9e6109a24b1/collection/11899025-9aa9d4e4-1982-42d5-824e-baf308d1f64b?action=share&source=collection_link&creator=11899025"
+	},
+	"item": [
+		{
+			"name": "Apartments",
+			"item": [
+				{
+					"name": "Get Apartments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Executive",
+									"disabled": true
+								},
+								{
+									"key": "number",
+									"value": "205",
+									"disabled": true
+								},
+								{
+									"key": "project",
+									"value": "Marina",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Without filters",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/apartments",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"apartments"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Luxury",
+											"disabled": true
+										},
+										{
+											"key": "number",
+											"value": "101",
+											"disabled": true
+										},
+										{
+											"key": "project",
+											"value": "Downtown",
+											"description": "Project Name",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1009"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f1-BuzDhj/ipM0oa1vsR+PJkXe8FIU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:05:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Apartments retrieved successfully\",\n    \"data\": [\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e4857\",\n                \"name\": \"Marina Bay Towers\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485b\",\n            \"number\": 101,\n            \"name\": \"Executive Penthouse\",\n            \"description\": \"Luxurious penthouse with panoramic city views and premium amenities.\",\n            \"price\": 4500,\n            \"location\": \"Manhattan, NY\",\n            \"__v\": 0\n        },\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e4858\",\n                \"name\": \"Golden Gate Residences\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485c\",\n            \"number\": 205,\n            \"name\": \"Golden Gate Studio\",\n            \"description\": \"Modern studio apartment with bay views and smart home features.\",\n            \"price\": 3200,\n            \"location\": \"San Francisco, CA\",\n            \"__v\": 0\n        },\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e4859\",\n                \"name\": \"Central Park Apartments\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485d\",\n            \"number\": 312,\n            \"name\": \"Central Park View\",\n            \"description\": \"Elegant 2-bedroom apartment overlooking Central Park.\",\n            \"price\": 5800,\n            \"location\": \"Upper East Side, NY\",\n            \"__v\": 0\n        },\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e485a\",\n                \"name\": \"Sunset Boulevard Complex\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485e\",\n            \"number\": 418,\n            \"name\": \"Sunset Terrace\",\n            \"description\": \"Spacious apartment with private terrace and Hollywood Hills views.\",\n            \"price\": 3800,\n            \"location\": \"West Hollywood, CA\",\n            \"__v\": 0\n        },\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e485b\",\n                \"name\": \"Ocean View Estates\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485f\",\n            \"number\": 521,\n            \"name\": \"Ocean Breeze Loft\",\n            \"description\": \"Contemporary loft with floor-to-ceiling windows and ocean views.\",\n            \"price\": 4200,\n            \"location\": \"Malibu, CA\",\n            \"__v\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "Filter by name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/apartments?name=Executive",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"apartments"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Executive"
+										},
+										{
+											"key": "number",
+											"value": "101",
+											"disabled": true
+										},
+										{
+											"key": "project",
+											"value": "Downtown",
+											"description": "Project Name",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "267"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10b-sOI9KytqHHpFqB84mkQwiRZvtuA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:06:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Apartments retrieved successfully\",\n    \"data\": [\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e4857\",\n                \"name\": \"Marina Bay Towers\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485b\",\n            \"number\": 101,\n            \"name\": \"Executive Penthouse\",\n            \"description\": \"Luxurious penthouse with panoramic city views and premium amenities.\",\n            \"price\": 4500,\n            \"location\": \"Manhattan, NY\",\n            \"__v\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "Filter by number",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/apartments?number=205",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"apartments"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Luxury",
+											"disabled": true
+										},
+										{
+											"key": "number",
+											"value": "205"
+										},
+										{
+											"key": "project",
+											"value": "Downtown",
+											"description": "Project Name",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1009"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f1-BuzDhj/ipM0oa1vsR+PJkXe8FIU\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:07:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Apartments retrieved successfully\",\n    \"data\": [\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e4858\",\n                \"name\": \"Golden Gate Residences\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485c\",\n            \"number\": 205,\n            \"name\": \"Golden Gate Studio\",\n            \"description\": \"Modern studio apartment with bay views and smart home features.\",\n            \"price\": 3200,\n            \"location\": \"San Francisco, CA\",\n            \"__v\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "Filter by project",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/apartments?project=Marina",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"apartments"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Luxury",
+											"disabled": true
+										},
+										{
+											"key": "number",
+											"value": "202",
+											"disabled": true
+										},
+										{
+											"key": "project",
+											"value": "Marina"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "267"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"10b-h6+T8pVoxMCVzU9FVMbCTspl27s\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:07:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Apartments retrieved successfully\",\n    \"data\": [\n        {\n            \"project\": {\n                \"_id\": \"67a4f645d23c5d0fff0e4857\",\n                \"name\": \"Marina Bay Towers\"\n            },\n            \"_id\": \"67a4f645d23c5d0fff0e485b\",\n            \"number\": 108,\n            \"name\": \"Harbor View Suite\",\n            \"description\": \"Waterfront apartment with marina access and luxury finishes.\",\n            \"price\": 3600,\n            \"location\": \"Marina District, SF\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Show Apartment Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/apartments/0"
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/apartments/68cefaf0edf4e519c4e022ef"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "265"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"109-o+kaWjkcPSKCLCaOWIc/9rpJnAA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:10:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Apartment retrieved successfully\",\n    \"data\": {\n        \"project\": {\n            \"_id\": \"67a4f645d23c5d0fff0e4857\",\n            \"name\": \"Marina Bay Towers\"\n        },\n        \"_id\": \"67a4f645d23c5d0fff0e485b\",\n        \"number\": 101,\n        \"name\": \"Executive Penthouse\",\n        \"description\": \"Luxurious penthouse with panoramic city views and premium amenities.\",\n        \"price\": 4500,\n        \"location\": \"Manhattan, NY\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Fail",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{url}}/apartments/0"
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-bhwsZBBhI1nTc/tvHTqWo0h5Tbc\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:10:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"error\": \"Error fetching apartment\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Add New Apartment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": 702,\n    \"name\": \"apartment 702\",\n    \"description\": \"A beautiful luxury apartment in downtown.\",\n    \"price\": 2000000,\n    \"location\": \"New York\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{url}}/apartments"
+					},
+					"response": [
+						{
+							"name": "Added successfully",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"number\": 705,\n    \"name\": \"apartment 702\",\n    \"description\": \"A beautiful luxury apartment in downtown.\",\n    \"price\": 2000000,\n    \"location\": \"New York\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/apartments"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "273"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"111-FsE8eI7MtXLvGeNAEfSdrXBgDWA\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:14:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Apartment created successfully\",\n    \"data\": {\n        \"number\": 702,\n        \"name\": \"apartment 702\",\n        \"description\": \"A beautiful luxury apartment in downtown.\",\n        \"price\": 2000000,\n        \"location\": \"New York\",\n        \"project\": {\n            \"_id\": \"67a4f645d23c5d0fff0e4858\",\n            \"name\": \"Golden Gate Residences\"\n        },\n        \"_id\": \"67a5181490a8daa6bc04ace5\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "Apartment number is missing",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"name\": \"apartment 702\",\n    \"description\": \"A beautiful luxury apartment in downtown.\",\n    \"price\": 2000000,\n    \"location\": \"New York\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/apartments"
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "91"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"5b-88SQ5342QDW/0tDAhpGLtjLh4n0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 20:14:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"errors\": [\n        {\n            \"type\": \"field\",\n            \"msg\": \"Apartment number must be a number\",\n            \"path\": \"number\",\n            \"location\": \"body\"\n        },\n        {\n            \"type\": \"field\",\n            \"msg\": \"Apartment number is required\",\n            \"path\": \"number\",\n            \"location\": \"body\"\n        },\n        {\n            \"type\": \"field\",\n            \"msg\": \"Error while checking apartment number uniqueness\",\n            \"path\": \"number\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Apartment number must be unique",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"number\": 702,\n    \"name\": \"apartment 702\",\n    \"description\": \"A beautiful luxury apartment in downtown.\",\n    \"price\": 2000000,\n    \"location\": \"New York\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{url}}/apartments"
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "131"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"83-WHNRzn0gbrv0z/zznnCf1HD7mYM\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Feb 2025 21:02:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"errors\": [\n        {\n            \"type\": \"field\",\n            \"value\": 702,\n            \"msg\": \"Error while checking apartment number uniqueness\",\n            \"path\": \"number\",\n            \"location\": \"body\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Get All Projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/projects",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"projects"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Marina",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get projects successfully",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/projects",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"projects"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Marina",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "112"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"70-Uhf5oFXSbmOeInHA5MaxF1lHBpg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Feb 2025 19:14:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Projects retrieved successfully\",\n    \"data\": [\n        {\n            \"name\": \"Marina Bay Towers\"\n        },\n        {\n            \"name\": \"Golden Gate Residences\"\n        },\n        {\n            \"name\": \"Central Park Apartments\"\n        },\n        {\n            \"name\": \"Sunset Boulevard Complex\"\n        },\n        {\n            \"name\": \"Ocean View Estates\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "Filter projects by name",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{url}}/projects?name=Marina",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"projects"
+									],
+									"query": [
+										{
+											"key": "name",
+											"value": "Marina"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"39-TUkZvR1iqT3Nh6pf9kN2Er7bhuU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 07 Feb 2025 19:14:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Projects retrieved successfully\",\n    \"data\": [\n        {\n            \"name\": \"Marina Bay Towers\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost:5000/api",
+			"type": "string"
+		}
+	]
+}
