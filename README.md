@@ -17,7 +17,6 @@ A full-stack application for managing apartment listings with Docker containeriz
 
 ### Installation
 ```bash
-# Navigate to the project directory
 git clone git@github.com:eslam733/simple-listing-apartments-app.git
 cd simple-listing-apartments-app
 docker-compose build
