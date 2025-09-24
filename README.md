@@ -1,6 +1,4 @@
-# Simple Listing Apartments App 🏠
-
-A full-stack application for managing apartment listings with Docker containerization.
+# Simple Listing Apartments App 
 
 ## Table of Contents
 - [Quick Start](#-quick-start)
